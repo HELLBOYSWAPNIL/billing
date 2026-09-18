@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-neutral-100/60 text-neutral-900 font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@media print {
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+  
+  /* Hide non-printable elements */
+  #app-sidebar,
+  #app-header,
+  #mobile-nav-backdrop,
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  /* Make printable invoice occupy entire paper */
+  #printable-invoice {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  @page {
+    size: auto;
+    margin: 15mm;
+  }
+}

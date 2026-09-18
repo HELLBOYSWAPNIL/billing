@@ -1,0 +1,6 @@
+{
+  "name": "Simple Billing Software",
+  "description": "A clean and simple billing software to create invoices, manage clients, track payments, and organize business finances.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
